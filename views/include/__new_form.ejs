@@ -1,0 +1,57 @@
+
+                 <!-- form handling -->
+
+
+                 <form action="http://localhost:8080/api/users" method="post" id="add_new_user">
+                    <div class="new_user">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="hidden" name="id">
+                            <input type="text" name="name" value="" placeholder="mark stoenis">
+                        </div>
+
+
+                         <div class="form-group">
+                             <label for="Email" class="text-light">Email</label>
+                             <input type="text" name="email" value="" placeholder="example@gmail.com">
+                         </div>
+
+                         <div class="form-group">
+                           <label for="gender" class="text-light">Gender</label>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-2" name="gender" value="male"   >
+                                <label for="radio-2" class="radio-label-1">Male</label>
+                           </div>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-3" name="gender" value="female" >
+                                <label for="radio-3" class="radio-label-1">Female</label>
+                           </div>
+                       </div>
+
+
+
+                       <div class="form-group">
+                           <label for="active" class="text-light">Status</label>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-4" name="status"  value="active" >
+                                <label for="radio-4" class="radio-label-1">Active</label>
+                           </div>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-5" name="status" value="inactive" >
+                                <label for="radio-5" class="radio-label-1">Inactive</label>
+                           </div>
+                       </div>
+
+
+                       <div class="form-group">
+                           <button type="submit" class="btn text-dark update">Save</button>
+                       </div>
+
+
+
+
+                    </div>
+                </form>
+
+               <!-- /form handling
+            -->

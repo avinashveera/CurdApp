@@ -1,0 +1,122 @@
+
+<!-- include header -->
+
+<%- include('include/__header') %>
+
+<!-- /include header -->
+
+
+    <!-- <main> -->
+
+
+        <main id="site-main">
+
+            <div class="container">
+                <div class="box-nav d-flex-justify-between">
+                   <div class="filter">
+                       <a href="/"><i class="fas fa-angle-left"></i> All users</a>
+                   </div>
+                </div>
+
+
+
+               
+           
+                <div class="form-title text-center">
+                    
+                    <h2 class="text-dark">Update User</h2>
+                    <span class="text-light">Use the below form to create a new account</span>
+
+
+                </div>
+
+
+
+       
+                 <!-- form handling -->
+
+
+                 <form method="POST" id="update_user">
+                    <div class="new_user">
+
+                        <!-- <div class="form-group">
+                            <label for="Email" class="text-light">Email</label>
+                            <input type="text" name="email" value="<%= user.email%>" placeholder="example@gmail.com">
+                        </div> -->
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="hidden" name="id" value="<%= user._id%>">
+                            <input type="text" name="name" value="<%= user.name%>" placeholder="mark stoenis">
+                        </div>
+
+
+                         <div class="form-group">
+                             <label for="Email" class="text-light">Email</label>
+                             <input type="text" name="email" value="<%= user.email%>" placeholder="example@gmail.com">
+                         </div>
+
+                         <div class="form-group">
+                           <label for="gender" class="text-light">Gender</label>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-2" name="gender" value="male" <%= user.gender == 'male' ? 'checked':'' %>>
+                                <label for="radio-2" class="radio-label">Male</label>
+                           </div>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-3" name="gender" value="female" <%= user.gender == 'female' ? 'checked':'' %>>
+                                <label for="radio-3" class="radio-label">Female</label>
+                           </div>
+                       </div>
+
+
+
+                       <div class="form-group">
+                           <label for="active" class="text-light">Status</label>
+                           <div class="radio inline">
+                               <input type="radio" name="status" id="radio-4" value="active" <%= user.status == 'active' ? 'checked':'' %>>
+                                <label for="radio-4" class="radio-label">Active</label>
+                           </div>
+                           <div class="radio inline">
+                               <input type="radio" id="radio-5" name="status" value="inactive" <%= user.status == 'inactive' ? 'checked':'' %>>
+                                <label for="radio-5" class="radio-label">Inactive</label>
+                           </div>
+                       </div>
+
+
+                       <div class="form-group">
+                           <button type="submit" class="btn text-dark update">Save</button>
+
+                       </br></br>
+
+                           <button type="button" class="btn text-dark update" id="delete_btn">delete</button>
+                       </div>
+
+
+
+
+                    </div>
+                </form>
+
+             
+
+
+
+               <!--        /form handling             -->
+
+            </div>
+
+        </main>
+
+
+
+<!--</main> -->
+
+
+
+
+<!-- include header -->
+
+<%- include ('include/__footer')%>
+
+<!-- /include header -->
+     
